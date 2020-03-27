@@ -15,6 +15,9 @@
 		722B4014242E166D00DC42AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722B4012242E166D00DC42AA /* LaunchScreen.storyboard */; };
 		722B401E242E188500DC42AA /* NamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722B401D242E188500DC42AA /* NamesViewController.m */; };
 		722B4021242E1C1100DC42AA /* NumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722B4020242E1C1100DC42AA /* NumbersViewController.m */; };
+		722B4024242E3CCD00DC42AA /* SegueSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B4023242E3CCD00DC42AA /* SegueSwizzler.swift */; };
+		722B4027242E861800DC42AA /* AdultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B4026242E861800DC42AA /* AdultViewController.swift */; };
+		722B4029242E862100DC42AA /* TeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B4028242E862100DC42AA /* TeenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		722B401D242E188500DC42AA /* NamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NamesViewController.m; sourceTree = "<group>"; };
 		722B401F242E1C1100DC42AA /* NumbersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumbersViewController.h; sourceTree = "<group>"; };
 		722B4020242E1C1100DC42AA /* NumbersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumbersViewController.m; sourceTree = "<group>"; };
+		722B4023242E3CCD00DC42AA /* SegueSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueSwizzler.swift; sourceTree = "<group>"; };
+		722B4026242E861800DC42AA /* AdultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultViewController.swift; sourceTree = "<group>"; };
+		722B4028242E862100DC42AA /* TeenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +69,10 @@
 		722B4006242E166C00DC42AA /* ObjCLearning */ = {
 			isa = PBXGroup;
 			children = (
+				722B4025242E85FF00DC42AA /* SegueSwizzler */,
 				722B4022242E377000DC42AA /* ObjC */,
 				722B4007242E166C00DC42AA /* AppDelegate.swift */,
 				722B4009242E166C00DC42AA /* SceneDelegate.swift */,
-				722B400B242E166C00DC42AA /* ViewController.swift */,
 				722B400D242E166C00DC42AA /* Main.storyboard */,
 				722B4010242E166D00DC42AA /* Assets.xcassets */,
 				722B4012242E166D00DC42AA /* LaunchScreen.storyboard */,
@@ -85,6 +91,17 @@
 				722B4020242E1C1100DC42AA /* NumbersViewController.m */,
 			);
 			path = ObjC;
+			sourceTree = "<group>";
+		};
+		722B4025242E85FF00DC42AA /* SegueSwizzler */ = {
+			isa = PBXGroup;
+			children = (
+				722B400B242E166C00DC42AA /* ViewController.swift */,
+				722B4026242E861800DC42AA /* AdultViewController.swift */,
+				722B4028242E862100DC42AA /* TeenViewController.swift */,
+				722B4023242E3CCD00DC42AA /* SegueSwizzler.swift */,
+			);
+			path = SegueSwizzler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +177,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				722B400C242E166C00DC42AA /* ViewController.swift in Sources */,
+				722B4024242E3CCD00DC42AA /* SegueSwizzler.swift in Sources */,
 				722B4008242E166C00DC42AA /* AppDelegate.swift in Sources */,
 				722B400A242E166C00DC42AA /* SceneDelegate.swift in Sources */,
 				722B4021242E1C1100DC42AA /* NumbersViewController.m in Sources */,
 				722B401E242E188500DC42AA /* NamesViewController.m in Sources */,
+				722B4029242E862100DC42AA /* TeenViewController.swift in Sources */,
+				722B4027242E861800DC42AA /* AdultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
