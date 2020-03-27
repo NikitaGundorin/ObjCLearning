@@ -13,6 +13,8 @@
 		722B400F242E166C00DC42AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722B400D242E166C00DC42AA /* Main.storyboard */; };
 		722B4011242E166D00DC42AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722B4010242E166D00DC42AA /* Assets.xcassets */; };
 		722B4014242E166D00DC42AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722B4012242E166D00DC42AA /* LaunchScreen.storyboard */; };
+		722B401E242E188500DC42AA /* NamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722B401D242E188500DC42AA /* NamesViewController.m */; };
+		722B4021242E1C1100DC42AA /* NumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722B4020242E1C1100DC42AA /* NumbersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		722B4010242E166D00DC42AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		722B4013242E166D00DC42AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		722B4015242E166D00DC42AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722B401B242E188500DC42AA /* ObjCLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCLearning-Bridging-Header.h"; sourceTree = "<group>"; };
+		722B401C242E188500DC42AA /* NamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NamesViewController.h; sourceTree = "<group>"; };
+		722B401D242E188500DC42AA /* NamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NamesViewController.m; sourceTree = "<group>"; };
+		722B401F242E1C1100DC42AA /* NumbersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumbersViewController.h; sourceTree = "<group>"; };
+		722B4020242E1C1100DC42AA /* NumbersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumbersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 		722B4006242E166C00DC42AA /* ObjCLearning */ = {
 			isa = PBXGroup;
 			children = (
+				722B4022242E377000DC42AA /* ObjC */,
 				722B4007242E166C00DC42AA /* AppDelegate.swift */,
 				722B4009242E166C00DC42AA /* SceneDelegate.swift */,
 				722B400B242E166C00DC42AA /* ViewController.swift */,
@@ -63,8 +71,20 @@
 				722B4010242E166D00DC42AA /* Assets.xcassets */,
 				722B4012242E166D00DC42AA /* LaunchScreen.storyboard */,
 				722B4015242E166D00DC42AA /* Info.plist */,
+				722B401B242E188500DC42AA /* ObjCLearning-Bridging-Header.h */,
 			);
 			path = ObjCLearning;
+			sourceTree = "<group>";
+		};
+		722B4022242E377000DC42AA /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				722B401C242E188500DC42AA /* NamesViewController.h */,
+				722B401D242E188500DC42AA /* NamesViewController.m */,
+				722B401F242E1C1100DC42AA /* NumbersViewController.h */,
+				722B4020242E1C1100DC42AA /* NumbersViewController.m */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +119,7 @@
 				TargetAttributes = {
 					722B4003242E166C00DC42AA = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -141,6 +162,8 @@
 				722B400C242E166C00DC42AA /* ViewController.swift in Sources */,
 				722B4008242E166C00DC42AA /* AppDelegate.swift in Sources */,
 				722B400A242E166C00DC42AA /* SceneDelegate.swift in Sources */,
+				722B4021242E1C1100DC42AA /* NumbersViewController.m in Sources */,
+				722B401E242E188500DC42AA /* NamesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ObjCLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +316,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nikitagundorin.ObjCLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCLearning/ObjCLearning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ObjCLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nikitagundorin.ObjCLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCLearning/ObjCLearning-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
