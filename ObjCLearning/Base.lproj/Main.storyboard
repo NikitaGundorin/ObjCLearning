@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKh-QU-wuQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tAL-w4-cvh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -137,6 +137,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwz-w7-sdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="1542"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="zS1-8b-dXA">
+            <objects>
+                <viewController id="tAL-w4-cvh" customClass="ImageViewController" customModule="ObjCLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TMt-m7-CcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t0k-Vd-ZzL">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="374" id="8iy-LR-p7z"/>
+                                    <constraint firstAttribute="width" constant="374" id="cyJ-z3-Z45"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b09-wq-hqT">
+                                <rect key="frame" x="167" y="665" width="80" height="30"/>
+                                <state key="normal" title="Load Image"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="tAL-w4-cvh" eventType="touchUpInside" id="jIh-5n-kE6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b09-wq-hqT" firstAttribute="top" secondItem="t0k-Vd-ZzL" secondAttribute="bottom" constant="30" id="6mC-p3-U0a"/>
+                            <constraint firstItem="t0k-Vd-ZzL" firstAttribute="centerX" secondItem="TMt-m7-CcV" secondAttribute="centerX" id="Et7-d2-cxB"/>
+                            <constraint firstItem="t0k-Vd-ZzL" firstAttribute="centerY" secondItem="TMt-m7-CcV" secondAttribute="centerY" id="GEw-ac-UZj"/>
+                            <constraint firstItem="b09-wq-hqT" firstAttribute="centerX" secondItem="TMt-m7-CcV" secondAttribute="centerX" id="HOC-RI-zYg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eon-fE-fcw"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="t0k-Vd-ZzL" id="uFO-2Y-dw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tcm-Am-Dv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="2242.6339285714284"/>
         </scene>
         <!--Adult View Controller-->
         <scene sceneID="aUf-fG-4ae">
